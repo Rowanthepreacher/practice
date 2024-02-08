@@ -2,15 +2,13 @@ from random import randint
 
 def collateresults(dicetypes, times):
     for dtype in dicetypes:
-        count = 1
         rollaverageexp = []
         rollaveragebump = []
-        while count <= times:
+        for count in range(times):
             finalrollexp = rolldice(dtype)
             finalrollbump = rollnoexplode(dtype)
             rollaverageexp.append(finalrollexp)
             rollaveragebump.append(finalrollbump)
-            count +=1
         rollaverageexp = sum(rollaverageexp)/len(rollaverageexp)
         rollaveragebump = sum(rollaveragebump)/len(rollaveragebump)
         print(f"I rolled a d{dtype} {times} times and the average was {rollaverageexp}")
