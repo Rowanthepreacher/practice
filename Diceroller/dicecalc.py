@@ -11,8 +11,8 @@ def collateresults(dicetypes, times):
             rollaveragebump.append(finalrollbump)
         rollaverageexp = sum(rollaverageexp)/len(rollaverageexp)
         rollaveragebump = sum(rollaveragebump)/len(rollaveragebump)
-        print(f"I rolled a d{dtype} {times} times and the average was {rollaverageexp}")
-        print(f"I rolled a d{dtype} {times} times and the average was {rollaveragebump}")
+        print(f"I rolled an exploding d{dtype} {times} times and the average was {rollaverageexp}")
+        print(f"I rolled a bumped d{dtype} {times} times and the average was {rollaveragebump}")
         print(f"Over the course of {times} rolls of a d{dtype}, the difference between averages was {rollaverageexp - rollaveragebump}.")
 
 
