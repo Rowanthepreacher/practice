@@ -7,7 +7,7 @@ def calcrooms(freeroom, intwallthick):
     # Calculate the available space for rooms (excluding external walls)
     available_space = freeroom - extraspace
     
-    # Initialize a list to hold possible room configurations
+    # Initialise a list to hold possible room configurations
     room_configs = []
     
     # Try all possible numbers of rooms

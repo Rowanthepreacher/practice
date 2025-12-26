@@ -8,7 +8,7 @@ def calcrooms(freeroom, room_length, intwallthick, split_gap):
     # Calculate the available space for rooms (excluding external walls)
     available_space = freeroom - outwallthick * 2  # Subtracting the external walls on both ends
 
-    # Initialize variables to count rooms
+    # Initialise variables to count rooms
     total_rooms = 0
     remaining_space = available_space
 
